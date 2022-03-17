@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-container" class="col-12 col-s-12">
+        <div class="col-4 col-s-4 space"></div>
+        <div id="header" class="col-4 col-s-4">
+            <h1 id="title">Student Survey Form</h1>
+            <p id="description">Please fill out the survey to complete your application for S.Y. 2022-2023.</p>
+        </div>
+        <div class="col-4 col-s-4 space"></div>
+    </div>
+    <div class="col-3 col-s-3 space"></div>
+        <div id="form-container" class="col-6 col-s-6">
+            <form id="survey-form">
+                <label id="name-label" for="name"><h3>Name</h3></label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                <br>
+                <label id="email-label" for="email"><h3>Email</h3></label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <br>
+                <label id="number-label" for="age"><h3>Age</h3><h4>(optional)</h4></label>
+                <input id="number" type="number" name="age" placeholder="Enter your age" min="13" max="59">
+                <br>
+                <table id="radio-table">
+                    <tr>
+                    <th colspan="2"><h3>What is your gender?</h3></th>
+                    </tr>
+                    <tr>
+                    <td><input type="radio" name="gender" value="male"></td><td>Male</td>
+                    </tr>
+                    <tr>
+                    <td><input type="radio" name="gender" value="female"></td><td>Female</td>
+                    </tr>
+                    <tr>
+                    <td><input type="radio" name="gender" value="other"></td><td>Other</td>
+                    </tr>
+                    <tr>
+                    <td><input type="radio" name="gender" value="none"></td><td>Prefer not to say</td>
+                    </tr>
+                </table>
+                <br>
+                <label id="dropdown-label" for="occupation"><h3>Occupation</h3></label>
+                <select id="dropdown" name="occupation">
+                    <optgroup label="Select your occupation">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    </optgroup>
+                </select>
+                <br>
+                <table id="radio-table">
+                    <tr>
+                    <th colspan="2"><h3>What extra class/es would you like to attend to?</h3></th>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="1" value="1"></td><td>Visual Arts</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="2" value="2"></td><td>Music</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="3" value="3"></td><td>Media and Technology</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="4" value="4"></td><td>Journalism</td>
+                    </tr>
+                    <tr>
+                    <td><input type="checkbox" name="5" value="5"></td><td>Sports</td>
+                    </tr>
+                </table>
+                <br>
+                <label for="about-me"><h3>About Me</h3></label>
+                <textarea id="about-me" name="about-me" rows="4" cols="50" placeholder="Tell us about yourself"></textarea>
+                <br>
+                <p id="submission">
+                    <input id="reset" type="reset" value="Reset">
+                    <input id="submit" type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    <div class="col-3 col-s-3 space"></div>
+</body>
+</html>
